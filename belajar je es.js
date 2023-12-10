@@ -19,7 +19,7 @@ var myFirstName = "awan";
 var myLastName = "ardy";
 
 // Understanding Uninitialized Variables
-var a = 5;  
+var a = 5;
 var b = 10;
 var c = "I am a";
 
@@ -319,8 +319,8 @@ function functionWithArgs(num1, num2) {
     console.log(num1 + num2);
 }
 
-functionWithArgs(1,2);
-functionWithArgs(7,9);
+functionWithArgs(1, 2);
+functionWithArgs(7, 9);
 
 // Return a Value from a Function with Return
 function timesFive(num) {
@@ -335,7 +335,7 @@ timesFive(0);
 let myGlobal = 10;
 
 function fun1() {
-    
+
 }
 
 var oopsGlobal = 5;
@@ -349,7 +349,7 @@ function fun2() {
         output += " oopsGlobal: " + oopsGlobal;
     }
     console.log(output);
-    
+
 }
 
 // Local Scope and Functions
@@ -392,3 +392,5 @@ function processArg(num) {
 
 processed = processArg(7);
 console.log(processed);
+
+// tes
