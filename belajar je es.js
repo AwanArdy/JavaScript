@@ -393,4 +393,34 @@ function processArg(num) {
 processed = processArg(7);
 console.log(processed);
 
-// tes
+// Stand in Line
+function nextInLine(arr, item) {
+    arr.push(item); //* Push item at the end of arr
+    const removed = arr.shift(); //* Call the shift() method on arr to get the first item and store it in removed
+    return removed;
+}
+
+let testArr = [1, 2, 3, 4, 5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+// Understanding Boolean Values
+function welcomeToBooleans() {
+    return true;
+}
+
+// Use Conditional Logic with IF Statements
+function trueOrFalse(kondisi) {
+    if (kondisi) {
+        return "Yes, that was true";
+    }
+    return "No. that was false"
+}
+
+trueOrFalse(true);
+trueOrFalse(false);
+console.log(false);
+
+// Comparison with the Equality Operator
