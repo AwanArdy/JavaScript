@@ -424,3 +424,155 @@ trueOrFalse(false);
 console.log(false);
 
 // Comparison with the Equality Operator
+function testEqual(val) {
+    if (val == 12) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+testEqual(10);
+console.log(testEqual);
+
+// Comparison with the Strict Equality Operator
+function testStrict(val) {
+    if (val === 7) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+testStrict(10);
+
+// Practice comparing different values
+function compareEquality() {
+    if (a === b) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+compareEquality(10, "10");
+
+// Comparison with the Inequality Operator
+function testNotEqual(val) {
+    if (val != 99) {
+        return "Not Equal";
+    }
+    return "Equal";
+}
+
+testNotEqual(10);
+
+// Comparison with the Strict Inequality Operator
+function testStrictNotEqual(val) {
+    if (val !== 17) { }
+    return "Not Equal";
+}
+return "Equal";
+
+// Comparison with the Greater Than Operator
+function testGreaterThan(val) {
+    if (val) {
+        return "Over 100";
+    }
+
+    if (val) {
+        return "over 10";
+    }
+
+    return "10 or Under";
+}
+
+testGreaterThan(10);
+
+// Comparison with the Greater Than Or Equal To Operator
+function testGreaterOrEqual(val) {
+    if (val >= 21) {
+        return "20 or over";
+    }
+    if (val >= 10) {
+        return "10 or over";
+    }
+    return "Less than 10";
+}
+
+testGreaterOrEqual(10);
+
+// Comparison with the Less Than Operator
+function testLessThan(val) {
+    if (val < 25) {
+        return "Under 25";
+    }
+
+    if (val < 55) {
+        return "Under 55";
+    }
+
+    return "55 or Over";
+}
+
+testLessThan(10);
+
+// Comparison with the Less Than Or Equal To Operator
+function testLessOrEqual(val) {
+    if (val <= 12) {
+        return "Smaller Than or Equal to 12";
+    }
+
+    if (val <= 24) {
+        return "Smaller Than or Equal to 24";
+    }
+    return "More Than 24";
+}
+
+testLessOrEqual(10);
+
+// Comparisons with the Logical and Operator
+function testLogicalAnd(val) {
+    if (val > 24 && val < 51) {
+        return "Yes";
+    }
+    return "No";
+}
+testLogicalAnd(10);
+
+// Comparisons with the Logical Or Operator
+function testLogicalOr(val) {
+    if (val > 20 || val < 10) {
+        return "Outside";
+    }
+
+    return "Inside";
+}
+
+testLogicalOr(15);
+
+// Introducing Else Statements
+function testElse(val) {
+    let result = "";
+
+    if (val > 5) {
+        result = "Bigger than 5";
+    } else {
+        result = "5 or Smaller";
+    }
+
+    return result;
+}
+
+testElse(4);
+
+// introducing Else If Statements
+function testElseIf(val) {
+    if (val > 10) {
+        return "Greater than 10";
+    } else if (val < 5) {
+        return "Smaller than 5";
+    } else {
+        return "Between 5 and 10";
+    }
+}
+
+// Change this value to test
+testElseIf(7);
