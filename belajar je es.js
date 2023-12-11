@@ -574,5 +574,4 @@ function testElseIf(val) {
     }
 }
 
-// Change this value to test
 testElseIf(7);
