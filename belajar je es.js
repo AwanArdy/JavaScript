@@ -750,9 +750,97 @@ abTest(2, 2);
 let count = 0;
 
 function cc(card) {
-
-
-    return "Change Me"
+    switch (card) {
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            count++;
+            break;
+        case 10:
+        case "J":
+        case "Q":
+        case "K":
+        case "A":
+            count--;
+            break;
+    }
+    if (count > 0) {
+        return count + " Bet";
+    } else {
+        return count + " Hold";
+    }
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+// Build JavaScript Objects
+const myyDog = {
+    "name": "Ella",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["bone", "ball"]
+}
+
+// Accessing Object Properties with Dot Notation
+const testtObj = {
+    hat: "ballcap",
+    shirt: "jersey",
+    shoes: "cleats"
+};
+
+const hatValue = testtObj.hat;
+const shirtValues = testtObj.shirt;
+
+// Accessing Object Properties with Bracket Notation
+const testOobj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drimk": "water"
+};
+
+const entreeValue = testOobj["an entree"];
+const drinkValue = testOobj["the drink"];
+
+// Accessing Object Properties with Variables
+const testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+};
+
+const playerNumber = 16;
+const player = testObj[playerNumber];
+console.log(player);
+
+// Updating Object Properties
+const myDogg = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+
+myDogg.name = "Happy Coder";
+
+// Add New Properties to a javaScript Object
+const myDdog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+
+myDdog.bark = bow - wow;
+
+// Delete Properties from a javaScript Object
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
+};
+
+delete myDog.tails;
