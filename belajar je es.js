@@ -844,3 +844,85 @@ const myDog = {
 };
 
 delete myDog.tails;
+
+// Using Objects for Lookups
+function phoneticLookup(val) {
+    let result = "";
+
+    var lookUp = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot": "Frank"
+    };
+
+    result = lookUp[val];
+
+    return result;
+}
+
+phoneticLookup("charlie")
+
+// Testing Objects for Properties
+function checkObj(obj, checkProp) {
+    if (obj.hasOwnProperty(checkProp)) {
+        return obj[checkProp];
+    } else {
+        return "Not Found";
+    }
+}
+
+// Manipulating Complex Objects
+const myMusic = [
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    }
+];
+
+// Accessing Nested Objects
+const myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
+
+// Accessing Nested Arrays
+const myPlants = [
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion"
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",
+            "birch"
+        ]
+    }
+];
+
+const secondTree = myPlants[1].list[1];
